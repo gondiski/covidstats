@@ -1,0 +1,9 @@
+<div class="container mx-auto flex items-center">
+  <div class="columns-1 ">
+  		<%= form_with url: "/home/search", method: :post do |form| %>
+		  <%= form.label :country, "Search for country:" %>
+		  <%= form.text_field :country, class:"rounded" %>
+		  <%= form.submit "Search", class:"rounded outline outline-blue-500 w-32 p-2" %>
+		<% end %>
+  </div>
+</div>

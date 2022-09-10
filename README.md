@@ -1,6 +1,7 @@
 # Covid stats
+In this project, I am accessing a covid19 API and displaying the stats on a UI made using Rails 7 and Javascript libraries jquery, toastr and sweetalert2
 
-[covidstats.onrender.com](https://covidstats.onrender.com)
+[covidstats.onrender.com](https://covidstats-jq3q.onrender.com)
 
 ## Install
 
