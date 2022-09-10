@@ -5,7 +5,6 @@ class HomeController < ApplicationController
 
   def search
     country =  params[:country]
-    result = Services::Covid.get_stats(country)
-    render status: :ok, json: result
+    @results = Services::Covid.get_stats(country)
   end
 end

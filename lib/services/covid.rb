@@ -3,6 +3,7 @@ module Services
 		def self.get_stats(country)
 			require "uri"
 			require "net/http"
+			require "json"
 
 			url = URI("https://api.covid19api.com/country/#{country}/status/confirmed")
 
@@ -12,7 +13,8 @@ module Services
 			request = Net::HTTP::Get.new(url)
 
 			response = https.request(request)
-			puts response.read_body
+			value = response.read_body
+			puts value["Country"]
 		end
 	end
 end
