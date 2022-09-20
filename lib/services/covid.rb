@@ -13,8 +13,7 @@ module Services
 			request = Net::HTTP::Get.new(url)
 
 			response = https.request(request)
-			value = response.read_body
-			puts value["Country"]
+                        value = JSON.parse(response.body)
 		end
 	end
 end
